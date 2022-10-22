@@ -100,10 +100,10 @@
 
                         <thead>
                             <tr>
-                                <th>Level</th>
-                                <th>Env</th>
-                                <th>Time</th>
-                                <th>Message</th>
+                                <th>等級</th>
+                                <th>環境</th>
+                                <th>時間</th>
+                                <th>訊息</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -147,7 +147,7 @@
 
         <div class="box box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Files</h3>
+                <h3 class="box-title">記錄檔</h3>
             </div>
             <div class="box-body no-padding">
                 <ul class="nav nav-pills nav-stacked">
@@ -163,15 +163,15 @@
 
         <div class="box box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Info</h3>
+                <h3 class="box-title">資訊</h3>
             </div>
             <div class="box-body no-padding">
                 <ul class="nav nav-pills nav-stacked">
                     <li class="margin: 10px;">
-                        <a>Size: {{ $size }}</a>
+                        <a>大小：{{ $size }}</a>
                     </li>
                     <li class="margin: 10px;">
-                        <a>Updated at: {{ date('Y-m-d H:i:s', filectime($filePath)) }}</a>
+                        <a>最後更新：{{ date('Y-m-d H:i:s', filectime($filePath)) }}</a>
                     </li>
                 </ul>
             </div>
