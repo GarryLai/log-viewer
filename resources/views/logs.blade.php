@@ -168,10 +168,10 @@
             <div class="box-body no-padding">
                 <ul class="nav nav-pills nav-stacked">
                     <li class="margin: 10px;">
-                        <a>大小：{{ $size }}</a>
+                        <a>大小: {{ $size }}</a>
                     </li>
                     <li class="margin: 10px;">
-                        <a>最後更新：{{ date('Y-m-d H:i:s', filectime($filePath)) }}</a>
+                        <a>最後更新: {{ date('Y-m-d H:i:s', filectime($filePath)) }}</a>
                     </li>
                 </ul>
             </div>
