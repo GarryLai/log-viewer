@@ -32,7 +32,7 @@ class LogController extends Controller
                 'size'      => static::bytesToHuman($viewer->getFilesize()),
             ]));
 
-            $content->header($viewer->getFilePath());
+            $content->header($viewer->file);
         });
     }
 
