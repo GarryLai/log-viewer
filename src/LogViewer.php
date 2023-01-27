@@ -75,7 +75,7 @@ class LogViewer extends Extension
             $path = sprintf(storage_path('logs/%s'), $this->file);
 
             if (!file_exists($path)) {
-                throw new \Exception('log not exists!');
+                abort(404);
             }
 
             $this->filePath = $path;
